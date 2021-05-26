@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development programming website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(7, 7, 7);
+            color: rgb(252, 249, 249);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header::before {
+            content: "";
+            background-image: url('https://source.unsplash.com/collection/190727/1600x900');
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .navbar {
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            opacity: 0.6;
+        }
+
+        .navigation {
+            display: flex;
+            
+        }
+
+        li {
+            list-style: none;
+            padding: 25px 22px;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+        }
+
+        li:hover {
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(86, 235, 210);
+            font-size: 20px;
+
+        }
+
+        .right {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            /* border: 2px solid green; */
+
+        }
+
+        .right button a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .btn {
+
+            margin: 7px 8px;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: 2px solid grey;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(90, 89, 89);
+        }
+
+        .sec {
+            /* border: 2px solid  lightcoral; */
+            border-radius: 10px;
+            height: 350px;
+            width: 1306px;
+            margin: 38px auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Newsreader', serif;
+
+        }
+
+        .con {
+            border: 1px solid lightcoral;
+            border-radius: 10px;
+            height: 220px;
+            width: 1119px;
+            margin: 60px;
+            /* margin-top: -37px; */
+            padding: 18px 56px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .con a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .con a:hover {
+            color: cyan;
+
+        }
+
+        .head1 {
+            font-size: 2.3rem;
+            text-align: center;
+        }
+        .head2 {
+            /* font-size: 2.3rem; */
+            text-align: center;
+        }
+
+        .con p {
+            text-align: center;
+        }
+
+        /* section::before{
+          content: "this is a content"
+      } */
+        .sec2 {
+            width: 100%;
+            height: 470px;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .con21 {
+            /* border: 2px solid lightcoral; */
+            /* padding: 0px auto; */
+            /* margin: 94px; */
+            text-align: center;
+            height: 150px;
+            font-family: 'Newsreader', serif;
+            font-size: 25px;
+        }
+
+        .con22 {
+            border: 2px solid rgb(5, 5, 5);
+            border-radius: 8px;
+            background-color: whitesmoke;
+            padding: 34px 16px;
+            text-align: center;
+            height: 290px;
+            width: 450px;
+            font-family: 'Newsreader', serif;
+            box-shadow: 3px 3px 3px 3px rgb(204, 65, 65);
+        }
+
+        #btn2 {
+            margin: 45px 8px;
+            background-color: rgb(118, 170, 76);
+            color: rgb(253, 249, 249);
+            padding: 10px 15px;
+            border: 2px solid rgb(141, 138, 138);
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+        #btn2:hover{
+            background-color: rgb(90, 89, 89);
+        }
+        .con22 a {
+            color: rgb(245, 240, 240);
+            font-size: 16px;
+            text-decoration: none;
+            /* font-family: 'Newsreader', serif; */
+        }
+
+        .con22 p {
+            color: rgb(238, 27, 62);
+            font-family: 'Newsreader', serif;
+
+        }
+
+        .con22 h1 {
+            color: rgb(79, 85, 170);
+            font-family: 'Newsreader', serif;
+
+        }
+        .con22 h4 {
+            color: rgb(16, 17, 17);
+
+        }
+        .sec3 {
+            width: 100%;
+            height: 470px;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:lightblue;
+        }
+
+        .con31 {
+            /* border: 2px solid lightcoral; */
+            /* padding: 0px auto; */
+            /* margin: 94px; */
+            color: black;
+            text-align: center;
+            height: 150px;
+            font-family: 'Newsreader', serif;
+            font-size: 25px;
+        }
+
+        .con32 {
+            /* border: 2px solid rgb(5, 5, 5); */
+            border-radius: 8px;
+            background-color: whitesmoke;
+            padding: 34px 16px;
+            text-align: center;
+            height: 290px;
+            width: 450px;
+            font-family: 'Newsreader', serif;
+            box-shadow: 3px 3px 3px 3px rgb(82, 53, 185);
+        }
+
+        #btn3 {
+            margin: 45px 8px;
+            background-color: rgb(118, 170, 76);
+            color: rgb(253, 249, 249);
+            padding: 10px 15px;
+            border: 2px solid rgb(141, 138, 138);
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+        #btn3:hover{
+            background-color: rgb(90, 89, 89);
+        }
+        .con32 a {
+            color: rgb(245, 240, 240);
+            font-size: 16px;
+            text-decoration: none;
+            /* font-family: 'Newsreader', serif; */
+        }
+
+        .con32 p {
+            color: rgb(175, 13, 40);
+            font-family: 'Newsreader', serif;
+
+        }
+        #para1{
+            color: rgb(247, 109, 85);
+        }
+        .con32 h4 {
+            color: rgb(16, 17, 17);
+
+        }
+        .sec4 {
+            width: 100%;
+            height: 470px;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:khaki;
+        }
+
+        .con41 {
+            /* border: 2px solid lightcoral; */
+            /* padding: 0px auto; */
+            /* margin: 94px; */
+            color: black;
+            text-align: center;
+            height: 150px;
+            font-family: 'Newsreader', serif;
+            font-size: 25px;
+        }
+
+        .con42 {
+            /* border: 2px solid rgb(5, 5, 5); */
+            border-radius: 8px;
+            background-color: whitesmoke;
+            padding: 34px 16px;
+            text-align: center;
+            height: 290px;
+            width: 450px;
+            font-family: 'Newsreader', serif;
+            box-shadow: 3px 3px 3px 3px rgb(146, 76, 76);
+        }
+
+        #btn4 {
+            margin: 45px 8px;
+            background-color: rgb(118, 170, 76);
+            color: rgb(253, 249, 249);
+            padding: 10px 15px;
+            border: 2px solid rgb(141, 138, 138);
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+        #btn4:hover{
+            background-color: rgb(90, 89, 89);
+        }
+        .con42 a {
+            color: rgb(245, 240, 240);
+            font-size: 16px;
+            text-decoration: none;
+            /* font-family: 'Newsreader', serif; */
+        }
+
+        .con42 p {
+            color: rgb(175, 13, 40);
+            font-family: 'Newsreader', serif;
+
+        }
+        #para2{
+            color: rgb(205, 115, 228);
+        }
+        .con42 h4 {
+            color: rgb(16, 17, 17);
+
+        }
+        #cont5{
+         color: rgb(253, 250, 250);
+         width: 450px;
+         margin: 15px auto;
+         font-size: 20px;
+     }
+     #cont5:hover{
+         color: rgb(168, 164, 164);
+          cursor: pointer;
+     }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="list">Home</li>
+                <li class="list">About us</li>
+                <li class="list">Blog</li>
+                <li class="list">Webpages</li>
+                <li class="list">Designs</li>
+                <li class="list">CSS Templates</li>
+            </ul>
+            <div class="right">
+                <button class="btn">
+                    <!-- <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com"
+                        target="_blank"> -->
+                    <a href="Login  page.html"
+                        target="_blank">
+                        Login
+                    </a>
+                </button>
+                <button class="btn">
+                    Contact Us
+                </button>
+            </div>
+        </nav>
+    </header>
+    <h1 class="head1">Welcome to HTML/CSS coding world</h1>
+    <h2 class="head2">Development Pandas</h2>
+    <div class="sec">
+        <div class="con">
+            <p>CSS is the language we use to style an HTML document.
+
+                CSS describes how HTML elements should be displayed.
+
+                This tutorial will teach you CSS from basic to advanced.</p>
+            <a href="https://www.w3schools.com/Css/" target="_blank">
+                Read more....
+            </a>
+        </div>
+        <div class="con">
+            <p>HTML is the standard markup language for Web pages.
+
+                With HTML you can create your own Website.
+
+                HTML is easy to learn - You will enjoy it!</p>
+            <a href="https://www.w3schools.com/html/" target="_blank">
+                Read more....
+            </a>
+        </div>
+        <div class="con">
+            <p>JavaScript is the world's most popular programming language.
+
+                JavaScript is the programming language of the Web.
+                
+                JavaScript is easy to learn.
+            </p>
+            <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">
+                Read more....
+            </a>
+        </div>
+    </div>
+    <div class="sec2">
+
+        <div class="con21">
+            <h1>HTML</h1>
+            <p>The language for building webpages.</p>
+        </div>
+        <div class="con22">
+
+            <h4>HTML Example:</h4>
+
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            <button id="btn2"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">Try it
+                    yourself</a></button>
+        </div>
+    </div>
+    <div class="sec3">
+
+        <div class="con31">
+            <h1>CSS</h1>
+            <p>The language for styling web pages.</p>
+        </div>
+        <div class="con32">
+
+            <h4>CSS Example:</h4>
+            <p>
+                body {
+                    background-color: lightblue;
+                  }
+            </p>
+            <p id="para1">
+               h1 {
+                  color: white;
+                  text-align: center;
+                }
+            </p>
+            <button id="btn3"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default" target="_blank">Try it
+                    yourself</a></button>
+        </div>
+    </div>
+    <div class="sec4">
+
+        <div class="con41">
+            <h1>JavaScript</h1>
+            <p>The language for programming web pages.</p>
+        </div>
+        <div class="con42">
+
+            <h4>JavaScript Example:</h4>
+            <p>
+                <button onclick="myFunction()">Click Me!</button>
+            </p>
+            <p id="para2">
+               
+                    function myFunction() {
+                      var x = document.getElementById("demo");
+                      x.style.fontSize = "25px";
+                      x.style.color = "red";
+                    }
+                    
+            </p>
+            <button id="btn4"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_default" target="_blank">Try it
+                    yourself</a></button>
+        </div>
+    </div>
+    <div id="cont5">&copy; www.developmentpandas.com All Rights Reserved.</div>
+</body>
+
+</html>
